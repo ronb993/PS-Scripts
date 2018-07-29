@@ -1,4 +1,8 @@
-﻿# Error code for success: '3231711234' but converts --> '-1063256062'
+# This script is used to check multiple computers from a list to see if bitlocker needs to create
+# A new partition or if bitlocker is configured properly. Changes will have to be made to create a bitlocker partition
+# Error code for success: '3231711234' but converts --> '-1063256062'
+# Make sure you have permissions to run the script (Enable-PSRemoting -Force)
+# Add your host or ips in $comp_list and make sure you have a folder for output
 
 
 # Read file line by line
