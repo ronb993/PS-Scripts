@@ -12,7 +12,7 @@ if(Test-Connection -ComputerName $item -Buffersize 16 -Count 1 -Quiet){
 
     $online = $item
 
-    Invoke-Command -ComputerName $online -ArgumentList $online -ScriptBlock &$myScript)
+    Invoke-Command -ComputerName $online -ArgumentList $online -ScriptBlock $myScript)
 }
 
 else{
