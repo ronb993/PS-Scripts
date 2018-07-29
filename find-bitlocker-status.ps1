@@ -8,17 +8,17 @@ $comp_list = Get-Content "C:\somepath\computernames.txt"
 foreach($item in $comp_list) {
 
 # test the connection
-if(Test-Connection -ComputerName $item -Buffersize 16 -Count 1 -Quiet){
+    if(Test-Connection -ComputerName $item -Buffersize 16 -Count 1 -Quiet){
 
-    $online = $item
+        $online = $item
 
-    Invoke-Command -ComputerName $online -ArgumentList $online -ScriptBlock $myScript)
+        Invoke-Command -ComputerName $online -ArgumentList $online -ScriptBlock $myScript)
 }
 
-else{
+    else{
 
-    $badhost = $item
-    Write-Host -ForegroundColor Red $badhost ": is offline or icmp is blocked"
+        $badhost = $item
+        Write-Host -ForegroundColor Red $badhost ": is offline or icmp is blocked"
 
 }
 
