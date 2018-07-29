@@ -1,4 +1,6 @@
-IT-Scripts
+Scripts that I have or will be creating for Work.
+
+Feel free to fork, contribute, or share.
 
 
-Used to iterate through computer objects from a text file and figure out if bitlocker is configured to be setup.
+
